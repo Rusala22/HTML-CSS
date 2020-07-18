@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>flexbox</title>
+
+<style>
+    * {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header, .footer {
+    height: 40px;
+}
+
+.header {
+    background-color: yellow;
+}
+
+.navigation {
+    display: flex;
+    margin: 0;
+    align-items: center;
+    height: 40px;
+}
+
+.navigation__item {
+    list-style: none;
+    margin-right: 16px;
+}
+
+.footer {
+    background-color: green;
+    display: flex;
+}
+
+.footer_text {
+    margin: auto;
+}
+
+.content {
+    display: flex;
+    flex-grow: 1;
+}
+
+.dashboard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+    flex-grow: 1;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    line-height: 40px;
+    list-style: none;
+}
+
+.news__list {
+    align-self: flex-start;
+    margin: 0;
+}
+</style>
+
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav>
+                <ul class="navigation">
+                    <li class="navigation__item">About</li>
+                    <li class="navigation__item">Products</li class="navigation__item">
+                    <li class="navigation__item">Contacts</li class="navigation__item">
+                </ul>
+            </nav>
+        </header>
+        <main class="content">
+            <section class="dashboard">
+                <h2>I can use Flexbox!!!</h2>
+            </section>
+            <aside class="sidebar">
+                <h2>News</h2>
+                <ul class="news__list">
+                    <li>News 1</li>
+                    <li>News 2</li>
+                    <li>News 3</li>
+                </ul>
+            </aside>
+        </main>
+        <footer class="footer"><span class="footer_text">Footer</span></footer>
+    </div>
+</body>
+
+</html>
