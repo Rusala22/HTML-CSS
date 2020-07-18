@@ -4,112 +4,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-        integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
-    <title>flexbox</title>
-
-<style>
-    * {
+    <style type="text/css">
+        * {
     box-sizing: border-box;
 }
 
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
-
-.header, .footer {
-    height: 40px;
-}
-
 .header {
-    background-color: yellow;
-}
-
-.navigation {
-    display: flex;
-    margin: 0;
-    align-items: center;
     height: 40px;
-}
-
-.navigation__item {
-    list-style: none;
-    margin-right: 16px;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
 }
 
 .footer {
+    height: 40px;
     background-color: green;
     display: flex;
 }
 
-.footer_text {
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.navigation {
+    margin: 0;
+    display: flex;
+}
+
+.navigation_item {
+    margin-left: 16px;
+}
+
+.footer__text {
     margin: auto;
 }
 
-.content {
+.page {
     display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
     flex-grow: 1;
+    display: flex;
 }
 
 .dashboard {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: pink;
     flex-grow: 1;
-}
-
-.sidebar {
-    width: 200px;
-    background-color: grey;
-    display: flex;
-    flex-direction: column;
+    background-color: pink;
+    justify-content: center;
     align-items: center;
 }
 
-li {
-    line-height: 40px;
-    list-style: none;
+.news {
+    width: 200px;
+    background-color: gray;
+}
+
+.side__header {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0px;
 }
 
 .news__list {
-    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 0;
 }
-</style>
 
-
-
+.news__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 16px;
+    height: 40px;
+}
+    </style>
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="page">
         <header class="header">
-            <nav>
-                <ul class="navigation">
-                    <li class="navigation__item">About</li>
-                    <li class="navigation__item">Products</li class="navigation__item">
-                    <li class="navigation__item">Contacts</li class="navigation__item">
-                </ul>
-            </nav>
+            <ul class="navigation">
+                <li class="navigation_item">About</li>
+                <li class="navigation_item">Products</li>
+                <li class="navigation_item">Contacts</li>
+            </ul>
         </header>
         <main class="content">
             <section class="dashboard">
                 <h2>I can use Flexbox!!!</h2>
             </section>
-            <aside class="sidebar">
-                <h2>News</h2>
+            <aside class="news">
+                <h2 class="side__header">News</h2>
                 <ul class="news__list">
-                    <li>News 1</li>
-                    <li>News 2</li>
-                    <li>News 3</li>
+                    <li class="news__item">News 1</li>
+                    <li class="news__item">News 2</li>
+                    <li class="news__item">News 3</li>
                 </ul>
             </aside>
         </main>
-        <footer class="footer"><span class="footer_text">Footer</span></footer>
+        <footer class="footer"><span class="footer__text">Footer</span></footer>
     </div>
 </body>
 
