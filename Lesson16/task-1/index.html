@@ -9,37 +9,44 @@
     <title>Document</title>
 
     <style type="text/css">
-        div {
+div {
     margin: 16px;
-}
+}        
     </style>
 </head>
 
 <body>
     <form>
         <div class="form-control">
-            <input type="text" name="lastName" value="Emerson">
+            <label for="Last-Name-control">Last Name</label>
+            <input id="Last-Name-control" type="text" name="lastName" value="Emerson" readonly>
         </div>
 
         <div class="form-control">
-            <input type="number" name="age" value="17">
+            <label for="requiredAge">Age</label>
+            <input id="requiredAge" type="number" name="age" min="3" max="10" value="17" required>
         </div>
 
         <div class="form-control">
-            <input type="checkbox" name="agree">Accept terms and conditions
+            <input id="ageType" type="checkbox" name="agree" disabled>
+            <label for="ageType">Accept terms and conditions</label>
         </div>
 
         <div class="choose-gender">
-            <input type="radio" name="gender" checked>Male
-            <input type="radio" name="gender">Female
-            <input type="radio" name="gender">Secret
+            <input id="radioMale" type="radio" name="gender">
+            <label for="radioMale">Male</label>
+            <input id="radioFemale" type="radio" name="gender">
+            <label for="radioFemale">Female</label>
+            <input id="radioSecret" type="radio" name="gender" checked>
+            <label for="radioSecret">Secret</label>
         </div>
         <div class="form-control">
-            <textarea name="description" placeholder="Write description..."></textarea>
+            <textarea name="description" placeholder="Write description..." maxlength="10"></textarea>
         </div>
         <div>
             <button type="submit">Submit</button>
         </div>
     </form>
 </body>
+
 </html>
