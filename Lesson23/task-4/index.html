@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+
+<style type="text/css">
+    * {
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 900px) {
+  .page {
+    display: flex;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .main {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .main {
+    flex: 2;
+  }
+}
+
+.main-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.main-block__navigation {
+  background-color: #ff7f50;
+}
+
+@media screen and (min-width: 600px) {
+  .main-block__navigation {
+    flex: 1;
+  }
+}
+
+.main-block__products {
+  background-color: #006400;
+}
+
+@media screen and (min-width: 600px) {
+  .main-block__products {
+    flex: 1;
+  }
+}
+
+.main-block__news {
+  background-color: #0ff;
+}
+
+@media screen and (min-width: 900px) {
+  .main-block__news {
+    flex: 1;
+  }
+}
+
+span {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #faebd7;
+  text-transform: lowercase;
+}
+</style>
+</head>
+
+<body class="page">
+    <div class="main">
+        <div class="main-block main-block__navigation"><span>Navigation</span></div>
+        <div class="main-block main-block__products"><span>Products List</span></div>
+    </div>
+    <div class="main-block main-block__news"><span>News</span></div>
+</body>
+</html

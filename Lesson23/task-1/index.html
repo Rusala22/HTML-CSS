@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+
+<style type="text/css">
+    .header {
+  background-color: #eee;
+}
+
+.nav-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  height: 56px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.nav-list__item {
+  background-color: #ff7f50;
+  padding: 8px;
+  margin-left: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.nav-list__item_selected {
+  background-color: #fb0;
+}
+
+.nav-list__item:hover {
+  opacity: 0.7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+</style>
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__navigation">
+            <ul class="nav-list">
+                <li class="nav-list__item">Home</li>
+                <li class="nav-list__item nav-list__item_selected">Products</li>
+                <li class="nav-list__item">Contacts</li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
