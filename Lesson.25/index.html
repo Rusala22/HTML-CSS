@@ -1,325 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU="crossorigin="anonymous"/>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap"rel="stylesheet"/>
-    <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
 
 <style type="text/css">
-.price-tables {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1440px;
-  height: 1000px;
-  background-color: #141b1c;
-}
-
-.price-card {
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 380px;
-  height: 770px;
-  background: #334247;
-  margin-left: 18px;
-}
-
-.price-card__title {
-  margin-top: 30px;
-  text-align: center;
-}
-
-.price-card__title h2 {
-  margin: 0;
-  font-size: 35px;
-  line-height: 43px;
-  font-weight: 700;
-}
-
-.price-card__title p {
-  margin: 0;
-  font-size: 20px;
-  line-height: 24px;
-}
-
-.price-card__description {
-  margin-top: 39px;
-  width: 327px;
-  height: 36px;
-  font-size: 15px;
-  line-height: 18px;
-  font-weight: 300;
-  text-align: center;
-}
-.price-card__price {
-  width: 100%;
-  height: 104px;
-  margin-top: 36px;
-  text-align: center;
-  line-height: 104px;
-  background-color: #5bb189;
-  font-size: 55px;
-  font-weight: 700;
-}
-
-.price-card__options-list {
-  margin: 0;
-  padding: 0;
-  margin-top: 42px;
-  width: 100%;
-  list-style-type: none;
-}
-
-.price-card__options-list li {
-  display: flex;
-  width: 100%;
-  height: 50px;
-}
-
-.price-card__options-list li:nth-child(odd) {
-  background-color: #2A343880;
-}
-
-.price-card__options-list span {
-  display: inline-block;
-  height: 100%;
-  line-height: 50px;
-  font-size: 15px;
-  font-weight: 300;
-}
-
-.price-card__options-list img {
-  margin: 19px 21px 18px 22px;
-  width: 15px;
-  height: 13px;
-}
-
-.price-card__order-btn {
-  padding: 0;
-  margin-top: 35px;
-  width: 155px;
-  height: 40px;
-  border-radius: 20px;
-  background-color: #5bb189;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  font-family: Montserrat, sans-serif;
-  font-size: 15px;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-.business {
-  background-color: #3a6ba5;
-}
-
-.webshop {
-  background-color: #EC632A;
-}
-
-.badge {
-  position: absolute;
-  width: 145px;
-  height: 25px;
-  line-height: 25px;
-  text-align: center;
-  background-color: #DC3F45;
-  font-size: 15px;
-  font-weight: 700;
-  text-transform: uppercase;
-  transform: rotate(45deg);
-  margin-left: 295px;
-  margin-top: 30px;
-}
-
-* {
+    * {
   box-sizing: border-box;
 }
 
 html {
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: #141B1C;
+}
+
+.price-tables {
+  width: 1440px;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-card {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  width: 380px;
+  height: 770px;
+  background-color: #334247;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
+  margin: 0px 9px 0px 9px;
   color: #fff;
 }
+.price-card__title {
+  margin: 33px 0px 0px 0px;
+  text-align: center;
+  line-height: 43px;
+  font-size: 35px;
+  font-weight: 700;
+}
+.price-card__title-p {
+  margin-top: 0px;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+  text-align: center;
+  font-weight: 300;
+}
+.price-card__price {
+  display: flex;
+  position: relative;
+  height: 105px;
+  width: 380px;
+  margin-top: 33px;
+}
+.price-card__price-text {
+  color: #fff;
+  font-style: normal;
+  font-weight: bold;
+  margin: auto;
+  font-size: 55px;
+  line-height: 67px;
+  font-style: normal;
+}
+
+.price-card-1 .green {
+  background-color: #5BB189;
+}
+
+.price-card-2 .blue {
+  background-color: #3A6BA5;
+}
+
+.price-card-3 .orange {
+  background-color: #EC632A;
+}
+
+.price-card__description {
+  margin-top: 40px;
+  text-align: center;
+  height: 36px;
+  width: 327px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFF;
+  margin: 40px 26px 40px 26px;
+}
+
+.price-card__options-list {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 380px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.price-card__options-list-item {
+  display: flex;
+  height: 50px;
+  list-style-type: none;
+  padding: 0;
+}
+.price-card__options-list-item .checkmark {
+  margin: 18px 0px 19px 22px;
+}
+.price-card__options-list-item-text {
+  margin: 16px 22px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #fff;
+}
+
+li:nth-child(odd) {
+  background-color: #2A3438;
+}
+
+.price-card__order-btn {
+  width: 155px;
+  height: 40px;
+  border-radius: 20px;
+  margin: 39px 113px 40px 112px;
+  border: none;
+}
+.price-card__order-btn.green {
+  background-color: #5BB189;
+}
+.price-card__order-btn.blue {
+  background-color: #3A6BA5;
+}
+.price-card__order-btn.orange {
+  background-color: #EC632A;
+}
+.price-card__order-btn-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.price-card-popular {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 25px;
+  width: 147px;
+  background-color: #DC3F45;
+  transform: rotate(45deg);
+  padding: 0;
+  margin: 0;
+  top: 31px;
+  right: -30px;
+}
+.price-card-popular-text {
+  font-size: 14px;
+  line-height: 17px;
+  width: 76px;
+  height: 17px;
+  margin: auto;
+  text-align: center;
+  background-color: #DC3F45;
+  color: #FFF;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 </style>
- </head>
- 
-  <body>
-    <main class="price-tables">
-      <div class="price-card">
-        <span class="price-card__title">
-          <h2>Basic</h2>
-          <p>Website</p>
-        </span>
-        <div class="price-card__price">99€</div>
-        <span class="price-card__description">
-          Simple website made in the world's most popular CMS system, Wordpress.
-        </span>
-        <ul class="price-card__options-list">
-          <li>
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png"
-              alt="green symbol"
-            />
-            <span>Website in WordPress</span>
-          </li>
-          <li>
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png"
-              alt="green symbol"
-            />
-            <span>3 sub pages</span>
-          </li>
-          <li>
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png"
-              alt="green symbol"
-            />
-            <span>Theme customized</span>
-          </li>
-          <li>
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png"
-              alt="green symbol"
-            />
-            <span>Help and guidance</span>
-          </li>
-          <li>
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png"
-              alt="green symbol"
-            />
-            <span>System introduction</span>
-          </li>
-          <li>
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png"
-              alt="green symbol"
-            />
-            <span>2 weeks free support</span>
-          </li>
-        </ul>
-        <button class="price-card__order-btn">Order now</button>
-      </div>
-      <div class="price-card">
-        <div class="badge">Popular</div>
-        <span class="price-card__title">
-          <h2>Business</h2>
-          <p>Website</p>
-        </span>
-        <div class="price-card__price business">299€</div>
-        <span class="price-card__description">
-          Advanced website made in the world's most popular CMS system, Wordpress.
-        </span>
-        <ul class="price-card__options-list">
-          <li>
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png"
-              alt="green symbol"
-            />
-            <span>Website in WordPress</span>
-          </li>
-          <li>
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png"
-              alt="green symbol"
-            />
-            <span>3-5 sub pages</span>
-          </li>
-          <li>
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png"
-              alt="green symbol"
-            />
-            <span>Theme customized</span>
-          </li>
-          <li>
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png"
-              alt="green symbol"
-            />
-            <span>Help and guidance</span>
-          </li>
-          <li>
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png"
-              alt="green symbol"
-            />
-            <span>System introduction</span>
-          </li>
-          <li>
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png"
-              alt="green symbol"
-            />
-            <span>1 month free support</span>
-          </li>
-        </ul>
-        <button class="price-card__order-btn business">Order now</button>
-      </div>
-      <div class="price-card">
-        <span class="price-card__title">
-          <h2>Webshop</h2>
-          <p>Website</p>
-        </span>
-        <div class="price-card__price webshop">599€</div>
-        <span class="price-card__description">
-          Your very own webshop made the world's most popular CMS system,
-          Wordpress.
-        </span>
-        <ul class="price-card__options-list">
-          <li>
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png"
-              alt="green symbol"
-            />
-            <span>Webshop in WordPress</span>
-          </li>
-          <li>
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png"
-              alt="green symbol"
-            />
-            <span>3-5 sub pages</span>
-          </li>
-          <li>
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png"
-              alt="green symbol"
-            />
-            <span>Theme customized</span>
-          </li>
-          <li>
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png"
-              alt="green symbol"
-            />
-            <span>Help and guidance</span>
-          </li>
-          <li>
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png"
-              alt="green symbol"
-            />
-            <span>System introduction</span>
-          </li>
-          <li>
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png"
-              alt="green symbol"
-            />
-            <span>1 month free support</span>
-          </li>
-        </ul>
-        <button class="price-card__order-btn webshop">Order now</button>
-      </div>
-    </main>
-  </body>
+
+</head>
+
+<body>
+    <div class="page">
+        <main class="price-tables">
+            <div class="price-card price-card-1">
+                <h1 class="price-card__title">Basic</h1>
+                <p class="price-card__title-p">Website</p>
+                <div class="price-card__price green">
+                    <span class="price-card__price-text">99€</span>
+                </div>
+                <p class="price-card__description">Simple website made in the world's most popular CMS system, Wordpress
+                </p>
+                <ul class="price-card__options-list">
+                    <li class="price-card__options-list-item">
+                        <img class="checkmark"
+                            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png"
+                            alt="icon">
+                        <span class="price-card__options-list-item-text">Website in WordPress</span>
+                    </li>
+                    <li class="price-card__options-list-item">
+                        <img class="checkmark"
+                            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png"
+                            alt="icon">
+                        <span class="price-card__options-list-item-text">3 sub pages</span>
+                    </li>
+                    <li class="price-card__options-list-item">
+                        <img class="checkmark"
+                            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png"
+                            alt="icon">
+                        <span class="price-card__options-list-item-text">Theme customized</span>
+                    </li>
+                    <li class="price-card__options-list-item">
+                        <img class="checkmark"
+                            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png"
+                            alt="icon">
+                        <span class="price-card__options-list-item-text">Help and guidance</span>
+                    </li>
+                    <li class="price-card__options-list-item">
+                        <img class="checkmark"
+                            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png"
+                            alt="icon">
+                        <span class="price-card__options-list-item-text">System introduction</span>
+                    </li>
+                    <li class="price-card__options-list-item">
+                        <img class="checkmark"
+                            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png"
+                            alt="icon">
+                        <span class="price-card__options-list-item-text">2 weeks free support</span>
+                    </li>
+                </ul>
+                <button class="price-card__order-btn green">
+                    <span class="price-card__order-btn-text">Order now</span>
+                </button>
+            </div>
+            <div class="price-card price-card-2">
+                <div class="price-card-popular">
+                    <span class="price-card-popular-text">Popular</span>
+                </div>
+                <h1 class="price-card__title">Business</h1>
+                <p class="price-card__title-p">Website</p>
+                <div class="price-card__price blue">
+                    <span class="price-card__price-text">299€</span>
+                </div>
+                <p class="price-card__description">Advanced website made in the world's most popular CMS system,
+                    Wordpress</p>
+                <ul class="price-card__options-list">
+                    <li class="price-card__options-list-item">
+                        <img class="checkmark"
+                            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png"
+                            alt="icon">
+                        <span class="price-card__options-list-item-text">Website in WordPress</span>
+                    </li>
+                    <li class="price-card__options-list-item">
+                        <img class="checkmark"
+                            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png"
+                            alt="icon">
+                        <span class="price-card__options-list-item-text">3-5 sub pages</span>
+                    </li>
+                    <li class="price-card__options-list-item">
+                        <img class="checkmark"
+                            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png"
+                            alt="icon">
+                        <span class="price-card__options-list-item-text">Theme customized</span>
+                    </li>
+                    <li class="price-card__options-list-item">
+                        <img class="checkmark"
+                            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png"
+                            alt="icon">
+                        <span class="price-card__options-list-item-text">Help and guidance</span>
+                    </li>
+                    <li class="price-card__options-list-item">
+                        <img class="checkmark"
+                            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png"
+                            alt="icon">
+                        <span class="price-card__options-list-item-text">System introduction</span>
+                    </li>
+                    <li class="price-card__options-list-item">
+                        <img class="checkmark"
+                            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png"
+                            alt="icon">
+                        <span class="price-card__options-list-item-text">1 month free support</span>
+                    </li>
+                </ul>
+                <button class="price-card__order-btn blue">
+                    <span class="price-card__order-btn-text">Order now</span>
+                </button>
+            </div>
+            <div class="price-card price-card-3">
+                <h1 class="price-card__title">Webshop</h1>
+                <p class="price-card__title-p">Website</p>
+                <div class="price-card__price orange">
+                    <span class="price-card__price-text">599€</span>
+                </div>
+                <p class="price-card__description">Your very own webshop made the world's most popular CMS system,
+                    Wordpress</p>
+                <ul class="price-card__options-list">
+                    <li class="price-card__options-list-item">
+                        <img class="checkmark"
+                            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png"
+                            alt="icon">
+                        <span class="price-card__options-list-item-text">Webshop in WordPress</span>
+                    </li>
+                    <li class="price-card__options-list-item">
+                        <img class="checkmark"
+                            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png"
+                            alt="icon">
+                        <span class="price-card__options-list-item-text">3-5 sub pages</span>
+                    </li>
+                    <li class="price-card__options-list-item">
+                        <img class="checkmark"
+                            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png"
+                            alt="icon">
+                        <span class="price-card__options-list-item-text">Theme customized</span>
+                    </li>
+                    <li class="price-card__options-list-item">
+                        <img class="checkmark"
+                            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png"
+                            alt="icon">
+                        <span class="price-card__options-list-item-text">Help and guidance</span>
+                    </li>
+                    <li class="price-card__options-list-item">
+                        <img class="checkmark"
+                            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png"
+                            alt="icon">
+                        <span class="price-card__options-list-item-text">System introduction</span>
+                    </li>
+                    <li class="price-card__options-list-item">
+                        <img class="checkmark"
+                            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png"
+                            alt="icon">
+                        <span class="price-card__options-list-item-text">1 month free support</span>
+                    </li>
+                </ul>
+                <button class="price-card__order-btn orange">
+                    <span class="price-card__order-btn-text">Order now</span>
+                </button>
+            </div>
+        </main>
+    </div>
+</body>
+
 </html>
